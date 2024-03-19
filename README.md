@@ -1,16 +1,47 @@
 # flutter_job_portal
 
-A new Flutter project.
+مرحبا يا جماعة كيفكن .. هدا النسخة الأساسية من المشروع 
+انتو بيبقى عليكن انو تعملو الخطوات التالية:
+1- بدكن تعملو fork للكود الأساسي هاد فبيصير عندكن نسخة منو على ال github 
+2- بتروحو على ال fork تبعكن و بتنسخو الرابط تبعو
+3- بتروحو على مكان ما بدكن تنشئوا المشروع بعدين على التيرمينال تبعكن او تيرمينال اندرويد ستديو او تيرمينل الفيجوال و بتكتبو:
+```git clone <forked_repo_url>``` هون بتكتبو الرابط بدون الأقواس هاي
+4- بتعملو تعديلات على الكود تبعكن و على الملفات و بعدين بترجعو مكان ما انشئتو المشروع او عملتو استنساخ للكود من github بعدين بتروحو للتيرمينال و بتكتبو:
+```
+git add .
+git commit -m "commit"
+```
+5- بس خلصتو تعديل و اتأكدتو منو بتكتبو بالتيرمينال
+```git push origin master```
+و طبعا ال origin بتدل على الرابط اللي عملتو منو استنساخ للكود و master بتدل على اسم الفرع ، الخطوتين 4 و 5 بتعمليوهن كل مرة بتعدلو على الكود مشان ترفعو التعديل على النسخة الخاصة منكن من الكود بال github 
+6- بتروحو على github على ال fork تبعكن و بتعملو pull request : 
+New Pull Request -> Create Pull Request
+7-اذا في ملفات جوات المشروع ما بدكن ترفعوها على ال github بتعملو ملف جوات ال directory تبع المشروع و بتسمو الملف 
+.gitignore
+متل ما هوي ، يعني لا هوي لاحقة و لا اي شي بس بتكتبو اسمو هيك و جواتو فيكن تكتبو الملفات او المجلدات اللي ما بتنرفع لما بتعملو الخطوتين 4 و 5 بهالطريقة :
+../project_directory/.gitignore (جوات الملف)
+```
+#Simply write the name of directory or file
+build/
+.dart_tool/
+pubspec.lock
 
-## Getting Started
+*.log        # Ignore all files with the .log extension
+*.pdf        # Ignore all PDF files
+/build/      # Ignore the build directory in the root of the repository
+**/build/    # Ignore the build directory in any subdirectory
 
-This project is a starting point for a Flutter application.
+# Ignore build artifacts
+build/
 
-A few resources to get you started if this is your first Flutter project:
+# Ignore log files
+*.log
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+file\ with\ space.txt
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Ignore all files in the build directory
+build/
+
+# But don't ignore this specific file in the build directory
+!build/special-file.txt
+```
